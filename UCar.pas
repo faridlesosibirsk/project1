@@ -2,6 +2,9 @@
 
 interface
 
+uses
+  URoad;
+
 type
 
   TCar = class
