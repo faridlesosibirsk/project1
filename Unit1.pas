@@ -27,9 +27,7 @@ implementation
 
 procedure Form1.buttonRoad_Click(sender: Object; e: EventArgs);
 begin
-  road:=TRoad.Create;
-  road.Length:=60;
-  road.Width:=3;
+  road:=TRoad.Create(60, 3);
 end;
 
 end.
