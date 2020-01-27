@@ -14,6 +14,7 @@ type
   private
     road: TRoad;
     {$resource Unit1.Form1.resources}
+    buttonCar: Button;
     buttonRoad: Button;
     {$include Unit1.Form1.inc}
   {$endregion FormDesigner}
