@@ -11,9 +11,8 @@ type
     procedure buttonRoad_Click(sender: Object; e: EventArgs);
   {$region FormDesigner}
   private
-    road: TRoad;
     {$resource Unit1.Form1.resources}
-    buttonRoad: Button;
+    button1: Button;
     {$include Unit1.Form1.inc}
   {$endregion FormDesigner}
   public
@@ -22,7 +21,12 @@ type
       InitializeComponent;
     end;
   end;
-
+  
+  const
+    N = 3;
+  var
+    cars: array [1..N] of TCar;
+    
 implementation
 
 procedure Form1.buttonRoad_Click(sender: Object; e: EventArgs);
