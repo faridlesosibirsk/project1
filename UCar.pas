@@ -8,9 +8,11 @@ uses
 type
 
   TCar = class
+  private  
     X, V: real;
     P: integer;
     road: TRoad;
+  public 
     procedure move;
     constructor Create(road0: TRoad; p0: integer; v0: real);
   end;
