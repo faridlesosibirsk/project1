@@ -4,9 +4,10 @@ interface
 
 type
   TRoad = class
+  public
     Length: real;
     Width: integer;
-  constructor Create(length0: real; width0: integer);  
+    constructor Create(length0: real; width0: integer);  
   end;
 
 implementation
