@@ -13,7 +13,7 @@ type
     
   private
     road: TRoad;
-    procedure buttonRoad_Click(sender: Object; e: EventArgs); 
+    procedure button1_Click(sender: Object; e: EventArgs);
     procedure buttonCar_Click(sender: Object; e: EventArgs);
     procedure buttonMove_Click(sender: Object; e: EventArgs);
   {$region FormDesigner}
@@ -38,11 +38,6 @@ type
     
 implementation
 
-procedure Form1.buttonRoad_Click(sender: Object; e: EventArgs);
-begin
-  road:=TRoad.Create(60, 3);
-end;
-
 procedure Form1.buttonCar_Click(sender: Object; e: EventArgs);
 var
   i: integer;
@@ -56,6 +51,11 @@ var
   i: integer;
 begin
   for i:=1 to N do cars[i].move;
+end;
+
+procedure Form1.button1_Click(sender: Object; e: EventArgs);
+begin
+  road:=TRoad.Create(60, 3);
 end;
 
 end.

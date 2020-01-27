@@ -1,4 +1,4 @@
-﻿procedure InitializeComponent;
+procedure InitializeComponent;
     begin
         self.buttonRoad := new System.Windows.Forms.Button();
         self.buttonCar := new System.Windows.Forms.Button();
@@ -13,7 +13,7 @@
         self.buttonRoad.TabIndex := 0;
         self.buttonRoad.Text := 'Road';
         self.buttonRoad.UseVisualStyleBackColor := true;
-        self.buttonRoad.Click += buttonRoad_Click;
+        self.buttonRoad.Click += button1_Click;
         // 
         // buttonCar
         // 
