@@ -3,16 +3,18 @@
 interface
 
 uses 
-URoad,
-System, System.Drawing, System.Windows.Forms;
+  UCar,
+  URoad,
+  System, System.Drawing, System.Windows.Forms;
 
 type
   Form1 = class(Form)
     procedure buttonRoad_Click(sender: Object; e: EventArgs);
   {$region FormDesigner}
   private
+    road: TRoad;
     {$resource Unit1.Form1.resources}
-    button1: Button;
+    buttonRoad: Button;
     {$include Unit1.Form1.inc}
   {$endregion FormDesigner}
   public
