@@ -3,7 +3,6 @@
 interface
 
 uses 
-  Crt,
   UCar,
   URoad,
   System, System.Drawing, System.Windows.Forms;
@@ -18,10 +17,7 @@ type
   {$region FormDesigner}
   private
     {$resource Unit1.Form1.resources}
-    buttonCar: Button;
-    buttonMove: Button;
     button1: Button;
-    buttonRoad: Button;
     {$include Unit1.Form1.inc}
   {$endregion FormDesigner}
   public
@@ -45,9 +41,9 @@ begin
   road:=TRoad.Create(60, 3);
   for i:=1 to N do
     cars[i]:=TCar.Create(road, i, 2.0*i);
-  repeat  
+  //repeat  
     for i:=1 to N do cars[i].move; 
-  until KeyPressed;
+  //until KeyPressed;
 end;
 
 end.
